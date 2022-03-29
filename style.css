@@ -6,23 +6,25 @@ body {
 
 figure {
     display: inline-block;
-    margin: 24px 0;
+    /* margin: 24px 0; */
 }
 
 figure figcaption {
-    padding: 24px;
+     padding: 0 1.5rem 1rem; 
 }
-
+figure img{
+    margin: 1rem;
+}
 figure.figure-1 {
     background-color: #77B3D9;
 }
 
 figure.figure-2 {
-    background-color: #D8EBF2;
+    background-color: #d8f537;
 }
 
 form button {
-    background-color: #348ABF;
+    background-color: #1e2f77;
     border: #348ABF 1px solid;
     border-radius: 0;
     color: #FFFFFF;
@@ -31,11 +33,11 @@ form button {
 }
 
 form button:hover {
-    background-color: #77B3D9;
+    background-color: #b98639;
 }
 
 form input[type="text"], form input[type="email"] {
-    border: #348ABF 1px solid;
+    border: #5c74e2 1px solid;
     box-sizing: border-box;
     font-size: 100%;
     padding: 15px;
@@ -57,5 +59,14 @@ header {
 }
 
 main img {
-    max-width: 100%;
+    /* max-width: 100%; */
+}
+.d-flex{
+    display: flex;
+}
+.ma-2{
+    margin-right: 2rem;
+}
+ul li{
+    padding-top: 1rem;
 }

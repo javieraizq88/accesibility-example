@@ -1,38 +1,53 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <title>Accessibility Project Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1>Grand Canyon Adventures</h1>
     </header>
 
     <main>
-        <p>
-            This is an example of a website with some accessibility issues. Use the tools we learnt about in the course to debug the issues and answer the questions in the workbook.
-        </p>
+        <!-- Missing heading level 2 -->
+        <h2>
+            This is an example of a website with some accessibility issues. Use the tools we learnt about in the course
+            to debug the issues and answer the questions in the workbook.
+        </h2>
 
         <p>
-            To return to the <em>Web Design Accessibility</em> course on Udemy, <a href="https://www.udemy.com/course/web-accessibility/">click here</a>.
+            To return to the
+            <em>Web Design Accessibility</em>
+            course on Udemy,
+            <!-- Unclear link “click here” -->
+            <a href="https://www.udemy.com/course/web-accessibility/">go to Udemy</a>.
         </p>
 
         <h3>Pictures of the canyon</h3>
-
-        <figure class="figure-1">
-            <img src="https://xmeltrut.github.io/accessibility-project/images/horseshoe-bend.jpg" alt="Horseshoe Bend">
-            <figcaption>Horseshoe bend</figcaption>
-        </figure>
-
-        <figure class="figure-2" alt="Grand Canyon at sunset">
-            <img src="https://xmeltrut.github.io/accessibility-project/images/grand-canyon-sunset.jpg">
-            <figcaption>Grand Canyon at sunset</figcaption>
-        </figure>
+        <!-- order img and add margin to make a speace between -->
+        <div class="d-flex">
+            <figure class="figure-1 ma-2">
+                <img src="https://xmeltrut.github.io/accessibility-project/images/horseshoe-bend.jpg"
+                alt="Horseshoe Bend">
+                <figcaption>Horseshoe bend</figcaption>
+            </figure>
+            
+            <!-- Increase the contrast by changing the text or background colour -->
+            <figure class="figure-2" >
+                <!-- add alt in the img -->
+                <img src="https://xmeltrut.github.io/accessibility-project/images/grand-canyon-sunset.jpg" alt="Grand Canyon at sunset">
+                <figcaption>Grand Canyon at sunset</figcaption>
+            </figure>
+        </div>
 
         <h3>Related links</h3>
 
+        <!-- Add more space between list of links -->
         <ul>
             <li><a href="https://www.nps.gov/grca/index.htm">U.S. National Parks Service</a></li>
             <li><a href="https://en.wikipedia.org/wiki/Grand_Canyon">Wikipedia</a></li>
@@ -43,9 +58,14 @@
 
         <form method="get">
             <input type="email" name="email">
+            <!-- Add a label to the email input box -->
+            <label for="email"></label>
+            <!-- Increase the contrast by changing the text or background colour -->
             <button>Submit</button>
         </form>
     </main>
 
 
-</body></html>
+</body>
+
+</html>
